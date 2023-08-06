@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: pink;
+
+        &-item {
+        color: black;
+        font-weight: bold;
+        font-family: sans-serif;
+}
+}

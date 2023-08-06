@@ -1,0 +1,22 @@
+.tarjetas {
+    display: flex;
+    padding: 3rem;
+    gap: 1rem;
+    margin: 50%;
+    
+    
+        .tarjeta {
+        background-color: rgb(255, 255, 255);
+        padding: 1rem;
+        }
+    
+            &__titulo {
+            color: black;
+            font-family: sans-serif;
+            
+            }
+    
+                 &__parrafo {
+                 color:black;
+                }
+}
