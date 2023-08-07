@@ -12,11 +12,11 @@
     
  <!-- El encabezado (header) -->
 
-        <header>
+        <header id="Header">
             <nav class="navbar navbar-light bg-light navbar-expand-lg" >
                 <div class="container-fluid">
                      <a class="logo-navbar p-2" href="">
-                         <img src="./scss/imagenes/favicon logo.png" width="80">
+                         <img src="./scss/imagenes/favicon logo.png" width="80" class="logo">
                      </a>
                     <!--boton-->
                      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false"> 
@@ -25,17 +25,17 @@
                          </span>
                      </button>
                     <div class="collapse navbar-collapse" id="menu">
-                        <ul class="navbar-nav">
-                             <li class="nav-item p-2"><a href="index.html" class="nav-link"><strong>Inicio</strong></a></li>
-                             <li class="nav-item p-2"><a href="alojamiento.html" class="nav-link"><strong>Alojamiento</strong></a></li>
-                             <li class="nav-item p-2"><a href="ballenas.html" class="nav-link"><strong>Ballenas</strong></a></li>
-                             <li class="nav-item p-2"><a href="informacion.html" class="nav-link"><strong>Informacion</strong></a></li>
-                             <li class="nav-item p-2"><a href="contactanos.html" class="nav-link"><strong>Contactanos</strong></a></li>
+                        <ul class="navbar-nav main-menu">
+                             <li class="nav-item p-2 menu-item"><a href="index.html" class="nav-link"><strong>Inicio</strong></a></li>
+                             <li class="nav-item p-2 menu-item"><a href="alojamiento.html" class="nav-link"><strong>Alojamiento</strong></a></li>
+                             <li class="nav-item p-2 menu-item"><a href="ballenas.html" class="nav-link"><strong>Ballenas</strong></a></li>
+                             <li class="nav-item p-2 menu-item"><a href="informacion.html" class="nav-link"><strong>Informacion</strong></a></li>
+                             <li class="nav-item p-2 cta"><a href="contactanos.html" class="nav-link"><strong>Contactanos</strong></a></li>
                         </ul>
                     </div>
                     <form class="d-flex">
                          <input type="search" class="form-control me-2" placeholder="Buscar producto ...">
-                         <button type="button" class="btn btn-primary">Buscar</button>
+                         <button type="button" class="btn btn-primary button">Buscar</button>
                     </form>
                 </div>
             </nav>
@@ -53,58 +53,206 @@
         </div>   
     </div>
 
-   <!-- Pagina de inicio -->
+<!-- Pagina de inicio -->
 
-
+        <!-- fotos secciones-->
 <div class="row mt-5 text-center p-2">
-    <h2> <strong>Vivi todas tus experiencias</strong></h2>
-    <p>Nosotros podemos y queremos que vivas todas tus experiencias con nosotros</p>
+     <h2> <strong>Vivi todas tus experiencias</strong></h2>
+     <p>Nosotros podemos y queremos que vivas todas tus experiencias con nosotros</p>
 </div>
 
 </div>
 
 <div class="seccion container-fluid movies">
     <div class="movie">
-
         <a href="./alojamiento.html">
-            <img src="./scss/imagenes/fondo seccion 1.jpg" class="imagen img-fluid movie-poster">
-        </a>
+            <img src="./scss/imagenes/fondo seccion 1.png" class="imagen img-fluid movie-poster"></a>
 
-        </a>
         <a href="./ballenas.html">
-            <img src="./scss/imagenes/fondo seccion 2.webp" class="imagen img-fluid movie-poster">
-        </a>
+            <img src="./scss/imagenes/fondo seccion 2.png" class="imagen img-fluid movie-poster"></a>
 
-        </a>
         <a href="./informacion.html">
-            <img src="./scss/imagenes/fondo seccion 3.webp" class="imagen img-fluid movie-poster">
-        </a>
+            <img src="./scss/imagenes/foto seccion 3 .png" class="imagen img-fluid movie-poster"></a>
 
-        </a>    
         <a href="./contactanos.html">
-            <img href src="./scss/imagenes/fondo seccion 4.avif" class="imagen img-fluid movie-poster">
-        </a>
-        
+            <img href src="./scss/imagenes/fondo seccion 4.png" class="imagen img-fluid movie-poster"></a>
     </div>
+
+
+
+             <!-- fondo separador-->
+            <img src="./scss/imagenes/mini fondo ballenas.png" class="img-fluid d-block w-100 p-4 mt-5" alt="...">
+
+
+
+             <!-- ubicacion-->
+                <div class="row mt-4 text-center p-2">
+                    <h2><strong style="color: #F3F0A1;">¿Como llegar?</strong></h2>
+                    <p><strong>Les presentamos nuestra hermoso Puerto Madryn, Chubut, Argentina.</strong></p>
+                </div>
+              <div class="p-3" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46866.71101434679!2d-65.03483112442635!3d-42.76362172582377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe02355e87a2ead1%3A0x1e890d2810b44382!2sPuerto%20Madryn%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1691367983917!5m2!1ses-419!2sar" width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+            <!-- fondo separador-->
+            <img src="./scss/imagenes/mini fondo ballenas.png" class="img-fluid d-block w-100 p-4 mt-4" alt="...">
+
+            <!-- acordeon 1-->
+
+            <div class="row mt-5 text-center p-2">
+                <h2><strong style="color: #F3F0A1;">Guia de viaje</strong></h2>
+                <p><strong>Les presentamos nuestra guia perfecta para una experiencia maravillosa.</strong></p>
+            </div>
+
+                
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          <strong>¿Qué ver y hacer en Puerto Madryn?</strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                          <p><strong>Día 1 - Llegada a Puerto Madryn y Playa el Doradillo.</strong> 
+                          Llegamos a la ciudad a las 8 am, después de 3hs de viaje (2 hs en avión desde Buenos Aires y 1 hs desde el aeropuerto de Trelew hasta el hotel).
+                          Por suerte la habitación ya estaba disponible, así que nos dejaron pasar para dejar las cosas.
+                          Descansamos un poquito ya que no habíamos dormido bien la noche anterior (el vuelo salió cerca de las 5 am) y a las 11 am nos pasaron a buscar los chicos de Argentina Visión para ir a conocer las playas de El Doradillo.
+                          Nos habían recomendado mucho esta excursión, y sinceramente, fue la que más nos gustó.
+                          Tal vez por ser el primer contacto con las ballenas, o simplemente porque es increíble estar en la orilla y ver a estos gigantes de la naturaleza a unos escasos 15 metros!</p>
+
+                          <p><strong>Día 2 - Península Valdés.</strong>
+                         El segundo día nos pasaron a buscar nuevamente los chicos de Argentina Visión.
+
+                         Salimos cerca de las 8 am hacia Península Valdés, a unos 80 km de Puerto Madryn. Esta zona declarada Patrimonio de la Humanidad por la UNESCO,es el atractivo principal de                             la ciudad.
+                         Desde Puerto Pirámides salen las embarcaciones para hacer avistaje de ballenas y desde Punta Norte hasta Punta Delgada se pueden ver otros animales, como Elefantes y Lobos                             Marinos.
+                         Ésta es una excursión de unas 10 hs aproximadamente, así que no olviden llevar el mate y algún snack.
+                         Sólo podrán comprar comida en el restaurante de Punta Delgada, donde se hace la parada para el almuerzo (tengan en cuenta que la entrada noestá incluida). </p>
+
+                         <p><strong>Día 3 - Punta Cuevas y Punta Loma.</strong>
+                            El tercer día arrancamos temprano por la mañana, no queríamos perdernos el amanecer desde la terraza del hotel.
+
+                            Desayunamos y salimos a caminar por la costanera en sentido sur. Después de unos 4 km de caminata llegamos al Parque Histórico Punta Cuevas y al monumento al Indio Tehuelche. A unos metros, también se encuentra el Ecocentro.
+                            
+                            Punta Cuevas fue declarado parque histórico, y recibe este nombre por ser el primer asentamiento galés de la patagonia argentina, tras desembarcar en 1865 el velero Mimosa.
+                            
+                            Además de poder visitar las rocas donde vivieron los primeros galeses, estuvimos acompañados por una gran cantidad de amigos perrunos. También se lo conoce como Punta del Indio, ya que como verán en las fotos, hay un monumento al Indio Tehuelche (construido 100 años después, en 1965).</p>
+
+                         <p><strong>Día 2 - Península Valdés.</strong>
+                            El segundo día nos pasaron a buscar nuevamente los chicos de Argentina Visión.
+       
+                            Salimos cerca de las 8 am hacia Península Valdés, a unos 80 km de Puerto Madryn. Esta zona declarada Patrimonio de la Humanidad por la UNESCO, es el atractivo principal de la ciudad.
+                            Desde Puerto Pirámides salen las embarcaciones para hacer avistaje de ballenas y desde Punta Norte hasta Punta Delgada se pueden ver otros animales, como Elefantes y Lobos Marinos.
+                            Ésta es una excursión de unas 10 hs aproximadamente, así que no olviden llevar el mate y algún snack.
+                            Sólo podrán comprar comida en el restaurante de Punta Delgada, donde se hace la parada para el almuerzo (tengan en cuenta que la entrada no está incluida). </p>
+
+                         <p><strong>Día 4 - Vuelta a casa.</strong>
+                         El último día lo usamos para descansar, comprar recuerdos y regalos… infaltable en nuestros viajes (vayan con efectivo porque la mayoría de los locales no aceptan tarjeta).
+
+                         Al mediodía paramos para almorzar en un lugar que nos habían recomendado mucho, Náutico Bistró de mar.
+
+                         No se pierdan de ir un mediodía, la comida es excelente y en una de esas, tienen la misma suerte que tuvimos nosotros, y pueden ver pasar a las ballenas mientras almuerzan. ¡Fue una experiencia increible!</p>
+
+                            
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- acordeon 2-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <strong>¿Cuantos dias se recomienda estar en Puerto Madryn?</strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <strong>Te diría que un mínimo 4 días completos.</strong> También depende de la época en que se vaya cuales son las atracciones que se pueden visitar,pero hay bastante para hacer relacionado con la naturaleza,fauna,museos,aventura,etc.
+                          Tenes para recorrer la península valdes ( punta norte,punta delgada,los salares,caleta valdes ),puerto pirámides y alguna navegación ( ballenas,lobos ),playa doradillo y balnearios del centro en verano,catamaran frente a las costas,punta loma ( loberia ), 4 x 4 a punta ninfas,museos,el ecocentro,en Trelew museos,en el puerto de Rawson navegación con delfines,el valle inferior,Gaiman y las casas de te,algo mas lejos punta tombo con la pinguinera,etc.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- acordeon 3-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <strong>¿Cuál es la mejor época para viajar a ver ballenas en Madryn?</strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <strong>Fines de noviembre/principios de diciembre.</strong> La temporada para ver ballenas en Puerto Madryn va de mediados de junio a fines de noviembre/principios de diciembre. El mejor mes sería octubre, ya que hay más cantidad de ballenas y además se pueden ver pingüinos. Las vacaciones de invierno también son un momento muy elegido.
+                          <p>Si bien es un destino turístico que se puede visitar todo el año, entre mayo y diciembre se convierte en una visita clave porque se puede realizar el avistaje de ballenas. Ya sea desde desde la costa o desde una embarcación, las maneras de observarlas son varias.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+   
 </div>
 
    <!-- Pie de pagina (footer) -->
    
 
 <footer class="footer container-fluid">
-
+    
      <a><img src="./scss/imagenes/favicon logo.png" width="80"></a>
 
      <h2><strong>La Ballenita</strong></h2> 
 
     <hr style="width: 50%; color: rgb(255, 255, 255);">
 
-         <li class="d-flex"><a href="index.html"><strong style="color: white;">Inicio</strong></a></li>
-         <li class="d-flex"><a href="alojamiento.html"><strong style="color: white;">Alojamiento</strong></a></li>
-         <li class="d-flex"><a href="ballenas.html"><strong style="color: white;">Ballenas</strong></a></li>
-         <li class="d-flex"><a href="informacion.html"><strong style="color: white;">Informacion</strong></a></li>
-         <li class="d-flex"><a href="contactanos.html"><strong style="color: white;">Contactanos</stron>
+        
 
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <h4>
+                       <strong>La ballenita 🤍</strong> 
+                    </h4>
+                    <p>Esperamos de todo corazon que la hayan pasado genial y les hayan gustado nuestros servicios, los esperamos pronto!</p>
+                  </div>
+                  <div class="col">
+                    <h4>
+                       <strong> Visitanos</strong> 
+                    </h4>
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg>
+                      <a class="text-white text-decoration-none" href="https://twitter.com/home?lang=es" >Twitter</a>
+                    </div>
+
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                      </svg>
+                      <a class="text-white text-decoration-none" href="https://www.instagram.com/">Instagram</a>
+                    </div>
+
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>
+                      <a class="text-white text-decoration-none" href="https://www.facebook.com/home.php">Facebook</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <h4 class="p-2">
+                       <strong>Contactanos</strong> 
+                    </h4>
+                    <p>+54 351 819 8030</p>
+                    <p>Peluchissargentina@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
