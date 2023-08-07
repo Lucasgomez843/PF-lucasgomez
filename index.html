@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Ballenita</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./scss/imagenes/favicon logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./scss/styles.css">
 </head>
 <body>
@@ -16,9 +16,8 @@
             <nav class="navbar navbar-light bg-light navbar-expand-lg" >
                 <div class="container-fluid">
                      <a class="logo-navbar p-2" href="">
-                         <img src="./scss/imagenes/favicon logo.png" width="80">
+                         <img src="./img/favicon logo.png" width="80">
                      </a>
-                    <!--boton-->
                      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false"> 
                          <span 
                              class="navbar-toggler-icon">
@@ -27,61 +26,74 @@
                     <div class="collapse navbar-collapse" id="menu">
                         <ul class="navbar-nav">
                              <li class="nav-item p-2"><a href="index.html" class="nav-link"><strong>Inicio</strong></a></li>
-                             <li class="nav-item p-2"><a href="alojamiento.html" class="nav-link"><strong>Alojamiento</strong></a></li>
-                             <li class="nav-item p-2"><a href="ballenas.html" class="nav-link"><strong>Ballenas</strong></a></li>
-                             <li class="nav-item p-2"><a href="informacion.html" class="nav-link"><strong>Informacion</strong></a></li>
-                             <li class="nav-item p-2"><a href="contactanos.html" class="nav-link"><strong>Contactanos</strong></a></li>
+                             <li class="nav-item p-2"><a href="./pages/alojamiento.html" class="nav-link"><strong>Alojamiento</strong></a></li>
+                             <li class="nav-item p-2"><a href="./pages/ballenas.html" class="nav-link"><strong>Ballenas</strong></a></li>
+                             <li class="nav-item p-2"><a href="./pages/informacion.html" class="nav-link"><strong>Informacion</strong></a></li>
+                             <li class="nav-item p-2"><a href="./pages/contactanos.html" class="nav-link"><strong>Contactanos</strong></a></li>
                         </ul>
                     </div>
                     <form class="d-flex">
-                         <input type="search" class="form-control me-2" placeholder="Buscar producto ...">
-                         <button type="button" class="btn btn-primary button">Buscar</button>
-                    </form>
+                      <input type="search" class="form-control me-2" placeholder="Buscar producto ...">
+                      <button type="button" class="btn btn-primary">Buscar</button>
+                  </form>
                 </div>
             </nav>
         </header>
 
     <!-- Sub encabezado -->
 
-    <div >
-        <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                     <img src="./scss/imagenes/fondo ballenas.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-        </div>   
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/fondo ballenas.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Fondo ballenas 2.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
 <!-- Pagina de inicio -->
 
         <!-- fotos secciones-->
 <div class="row mt-5 text-center p-2">
-     <h2> <strong>Vivi todas tus experiencias</strong></h2>
-     <p>Nosotros podemos y queremos que vivas todas tus experiencias con nosotros</p>
+     <h2> <strong style="color: #F3F0A1;">Vivi todas tus experiencias</strong></h2>
+     <p><strong>Nosotros podemos y queremos que vivas todas tus experiencias con nosotros</strong></p>
 </div>
 
 </div>
 
-<div class="seccion container-fluid movies">
+<div class="container-fluid movies">
     <div class="movie">
-        <a href="./alojamiento.html">
-            <img src="./scss/imagenes/fondo seccion 1.png" class="imagen img-fluid movie-poster"></a>
+        <a href="./pages/alojamiento.html">
+            <img src="./img/fondo seccion 1.png" class="imagen img-fluid movie-poster border border-3 border-warning-subtle"></a>
 
-        <a href="./ballenas.html">
-            <img src="./scss/imagenes/fondo seccion 2.png" class="imagen img-fluid movie-poster"></a>
+        <a href="./pages/ballenas.html">
+            <img src="./img/fondo seccion 2.png" class="imagen img-fluid movie-poster border border-3 border-warning-subtle"></a>
 
-        <a href="./informacion.html">
-            <img src="./scss/imagenes/foto seccion 3 .png" class="imagen img-fluid movie-poster"></a>
+        <a href="./pages/informacion.html">
+            <img src="./img/fondo seccion 3 .png" class="imagen img-fluid movie-poster border border-3 border-warning-subtle"></a>
 
-        <a href="./contactanos.html">
-            <img href src="./scss/imagenes/fondo seccion 4.png" class="imagen img-fluid movie-poster"></a>
+        <a href="./pages/contactanos.html">
+            <img href src="./img/fondo seccion 4.png" class="imagen img-fluid movie-poster border border-3 border-warning-subtle"></a>
     </div>
-
+</div>
 
 
              <!-- fondo separador-->
-            <img src="./scss/imagenes/mini fondo ballenas.png" class="img-fluid d-block w-100 p-4 mt-5" alt="...">
+            <img src="./img/mini fondo ballenas.png" class="img-fluid d-block w-100 p-4 mt-5" alt="...">
 
 
 
@@ -96,7 +108,7 @@
 
 
             <!-- fondo separador-->
-            <img src="./scss/imagenes/mini fondo ballenas.png" class="img-fluid d-block w-100 p-4 mt-4" alt="...">
+            <img src="./img/mini fondo ballenas.png" class="img-fluid d-block w-100 p-4 mt-4" alt="...">
 
             <!-- acordeon 1-->
 
@@ -202,7 +214,7 @@
 
 <footer class="footer container-fluid">
     
-     <a><img src="./scss/imagenes/favicon logo.png" width="80"></a>
+     <a><img src="./img/favicon logo.png" width="80"></a>
 
      <h2><strong>La Ballenita</strong></h2> 
 
